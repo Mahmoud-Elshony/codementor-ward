@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'wars';
+  src: url('/src/assets/fonts/Raleway-VariableFont_wght.ttf') format('opentype');
+  /* font-weight: bold; */
+  font-style: normal;
+}
+
+* ,*:before,*:after{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "wars",system-ui, sans-serif !important;
+  /* color: rgb(0, 54, 72); */
+}
