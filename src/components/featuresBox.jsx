@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid2";
 import imgMentor from "../assets/img/mentorship.jpg"
+import freelanserImg from "../assets/img/freelance-job.png"
 import {
   Button,
   IconButton,
@@ -245,7 +246,7 @@ export default function FeatuersBox() {
         <Grid size={6} order={1} p={0}>
           {" "}
           <img
-            src="/src/assets/img/freelance-job.png"
+            src={freelanserImg}
             alt="Live programming help so you can learn to code"
             loading="lazy"
             width={"100%"}

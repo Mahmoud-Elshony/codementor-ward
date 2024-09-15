@@ -4,7 +4,8 @@ import FeatuersBox from "./featuresBox";
 import WorldSection from "./worldSectionComponent";
 import ContactWithComponent from "./contactWith";
 import FooteComponent from "./footer";
-
+import heroMImg from "../assets/img/hero-m.png"
+import heroLImg from "../assets/img/hero-l.png"
 function MainBox() {
   return (
     <>
@@ -13,8 +14,8 @@ function MainBox() {
           container
           sx={{
             backgroundImage: {
-              xs: "url(/src/assets/img/hero-m.png)",
-              sm: "url(/src/assets/img/hero-l.png)"
+              xs: `url(${heroMImg})`,
+              sm: `url(${heroLImg})`
             },
             backgroundSize: "contain",
             backgroundRepeat: "no-repeat",

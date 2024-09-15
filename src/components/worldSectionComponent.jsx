@@ -2,13 +2,9 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid2";
 import {
-  Button,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
   Typography,
 } from "@mui/material";
+import visitSVG from "../assets/img/visit-arc.svg"
 export default function WorldSection() {
   return (
     <Box
@@ -24,7 +20,7 @@ export default function WorldSection() {
       <Grid container spacing={2} pt={10}>
         <Grid size={6} order={1}>
           <Box container sx={{ maxWidth: "440px" }}>
-            <img src={"/src/assets/img/visit-arc.svg"} alt="visit" />
+            <img src={visitSVG} alt="visit" />
           </Box>
         </Grid>
         <Grid size={6} order={2}>
