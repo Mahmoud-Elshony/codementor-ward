@@ -3,6 +3,7 @@ import Typography from "@mui/material/Typography";
 import FeatuersBox from "./featuresBox";
 import WorldSection from "./worldSectionComponent";
 import ContactWithComponent from "./contactWith";
+import FooteComponent from "./footer";
 
 function MainBox() {
   return (
@@ -11,11 +12,16 @@ function MainBox() {
         <Box
           container
           sx={{
-            backgroundImage: "url(/src/assets/img/hero-l.png)",
+            backgroundImage: {
+              xs: "url(/src/assets/img/hero-m.png)",
+              sm: "url(/src/assets/img/hero-l.png)"
+            },
             backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
-            width: "642px",
+            position: "relative",
+            width: {sm:"600px",xs:"300px"},
             height: "330px",
+
             margin: "auto",
           }}
         ></Box>
@@ -34,7 +40,7 @@ function MainBox() {
         <FeatuersBox></FeatuersBox>
         <WorldSection />
         <ContactWithComponent></ContactWithComponent>
-        
+        {/* <FooteComponent></FooteComponent> */}
       </Box>
     </>
   );

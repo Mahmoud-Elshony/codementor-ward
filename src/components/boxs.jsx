@@ -18,7 +18,13 @@ export default function BoxSx() {
           // display: "flex",
           paddingTop: "105px",
           paddingBottom: "235px",
+          paddingLeft: "10px",
           textAlign: "center",
+          "&:after":{display: {
+            xs: "none",
+            md: "inline",
+          }}
+
         }}
         className="jumbotron__center"
       >

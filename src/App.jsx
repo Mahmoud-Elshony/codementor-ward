@@ -1,4 +1,5 @@
 import BoxSx from "./components/boxs";
+import FooterComponent from "./components/footer";
 import PrimarySearchAppBar from "./components/header";
 import ResponsiveAppBar from "./components/header";
 import MainBox from "./components/mainBox";
@@ -11,6 +12,7 @@ function App() {
       {/* <PrimarySearchAppBar></PrimarySearchAppBar> */}
       <BoxSx />
       <MainBox />
+      <FooterComponent></FooterComponent>
     </>
   );
 }
