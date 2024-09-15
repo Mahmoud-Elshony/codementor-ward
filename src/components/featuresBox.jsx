@@ -3,6 +3,7 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid2";
+import imgMentor from "../assets/img/mentorship.jpg"
 import {
   Button,
   IconButton,
@@ -135,7 +136,7 @@ export default function FeatuersBox() {
         <Grid size={6} order={2}>
           {" "}
           <img
-            src="/src/assets/img/mentorship.jpg"
+            src={imgMentor}
             alt="Live programming help so you can learn to code"
             loading="lazy"
             width={"100%"}
