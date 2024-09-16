@@ -1,10 +1,53 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid2";
-import {
-  Typography,
-} from "@mui/material";
-import visitSVG from "../assets/img/visit-arc.svg"
+import { Typography } from "@mui/material";
+import visitSVG from "../assets/img/visit-arc.svg";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+// W = [{
+//   image: (0,
+//   Z.Z)("landing-page/developers/jessamyn-smith.png"),
+//   name: "Jessamyn Smith",
+//   username: "jessamynsmith",
+//   description: "Experienced Full-Stack Web Developer",
+//   alt: "Jessamyn Smith, Python Developer and Mentor"
+// }, {
+//   image: (0,
+//   Z.Z)("landing-page/developers/dan-hamilton.png"),
+//   name: "Daniel Hamilton",
+//   username: "blackmind",
+//   description: "Senior Software Engineer @ Indeed",
+//   alt: "Daniel Hamilton, Senior Software Developer for Hire"
+// }, {
+//   image: (0,
+//   Z.Z)("landing-page/developers/martijn-pieters.png"),
+//   name: "Martijn Pieters",
+//   username: "mjpieters",
+//   description: "#1 Stack Overflow Python Answerer",
+//   alt: "Martijn Pieters, Python mentor",
+//   private: !0
+// }, {
+//   image: (0,
+//   Z.Z)("landing-page/developers/ionica-bizau.png"),
+//   name: "Ionică Bizău",
+//   username: "johnnyb",
+//   description: "Full-Stack Developer",
+//   alt: "Ionica Bizau, JS Mentor and Developer"
+// }, {
+//   image: (0,
+//   Z.Z)("landing-page/developers/miroslav-kutak.png"),
+//   name: "Miroslav Kuť\xe1k",
+//   username: "miroslavkutak",
+//   description: "Senior iOS Developer",
+//   alt: "Miroslav Kutak, Senior iOS Developer and Expert"
+// }, {
+//   image: (0,
+//   Z.Z)("landing-page/developers/ben-gottlieb.png"),
+//   name: "Ben Gottlieb",
+//   username: "bengottlieb",
+//   description: "Senior iOS Developer and Consultant",
+//   alt: "Miroslav Kutak, Senior iOS Developer and Expert"
+// }]
 export default function WorldSection() {
   return (
     <Box
@@ -18,19 +61,23 @@ export default function WorldSection() {
       }}
     >
       <Grid container spacing={2} pt={10}>
-        <Grid size={6} order={1}>
-          <Box container sx={{ maxWidth: "440px" }}>
-            <img src={visitSVG} alt="visit" />
+        <Grid
+          size={{ xs: 12, md: 8, lg: 6 }}
+          order={{ xs: 2 }}
+          paddingX={{ xs: 2, sm: 5,md:0}}
+        >
+          <Box container sx={{ maxWidth: "450px" }}>
+            <img style={{ width: "100%" }} src={visitSVG} alt="visit" />
           </Box>
         </Grid>
-        <Grid size={6} order={2}>
+        <Grid size={{ xs: 12, md: 4, lg: 6 }} textAlign={{xs:"center",md:"start"}} order={{ xs: 1, md: 2 }}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="113"
             height="36"
             viewBox="0 0 113 36"
-            style={{width: "63px"}}
-            >
+            style={{ width: "63px" }}
+          >
             <path
               fill="#010F57"
               fill-rule="evenodd"
@@ -38,11 +85,26 @@ export default function WorldSection() {
             ></path>
           </svg>
           <Typography
-            variant="h3"
-            fontWeight={"bolder"}
+            variant="h4"
+            fontWeight={"bold"}
             fontFamily={"Open Sans"}
           >
             Hiring for a bigger project?
+          </Typography>
+          <Typography variant="paragraph" my={2} display={"block"}>
+            Arc helps you find senior developers for both permanent full-time
+            roles and 40+ hour contract projects.
+          </Typography>
+          <Typography
+            component={"a"}
+            href="#"
+            sx={{ textDecoration: "none", fontSize: 25, fontWeight: "bolder" }}
+          >
+            Visit Arc to learn more{" "}
+            <Typography
+              component={ArrowForwardIcon}
+              sx={{ fontSize: 28, top: 7,position: "relative" }}
+            />
           </Typography>
         </Grid>
       </Grid>
